@@ -4,7 +4,12 @@
 @section('content')
 
   <main>
-    <h1>{{$txt}}</h1>
+    <ul>
+      @foreach ($paganti as $item)
+        <li>{{$item -> name}} {{$item -> lastname}}</li>
+
+      @endforeach
+    </ul>
   </main>
 
 

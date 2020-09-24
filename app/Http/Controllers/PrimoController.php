@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\PrimoModel;
 
 class PrimoController extends Controller
 {
   public function index() {
 
-    $txt = 'ciao mondo';
-    return view('home', compact('txt'));
+    $paganti = PrimoModel::all();
+    return view('home', compact('paganti'));
   }
-  
+
 }
