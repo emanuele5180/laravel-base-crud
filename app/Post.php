@@ -12,5 +12,5 @@ class Post extends Model
     'category',
     'like',
     'dislike'
-  ]
+  ];
 }
