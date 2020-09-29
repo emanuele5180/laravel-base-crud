@@ -8,11 +8,11 @@ use App\Post;
 
 $factory->define(Post::class, function (Faker $faker) {
     return [
-      'title'=> $faker -> word(),
-      'text'=> $faker -> text($maxNbChars = 200),
-      'category'=> $faker -> word(),
-      'like'=> $faker -> randomDigit(),
-      'dislike'=> $faker -> randomDigit()
+      'title'    =>    $faker -> word(),
+      'text'     =>    $faker -> text($maxNbChars = 200),
+      'category' =>    $faker -> word(),
+      'like'     =>    $faker -> randomDigit(),
+      'dislike'  =>    $faker -> randomDigit()
 
 
     ];
