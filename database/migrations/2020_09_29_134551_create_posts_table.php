@@ -22,7 +22,6 @@ class CreatePostsTable extends Migration
             $table -> integer('like');
             $table -> integer('dislike');
 
-
             $table->timestamps();
         });
     }
